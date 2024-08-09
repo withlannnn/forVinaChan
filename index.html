@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>withLan</title>
     
+    <!-- Menambahkan Google Fonts Montserrat -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 
     <style>
+        /* Mengubah seluruh teks di halaman menggunakan font Montserrat */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -21,7 +23,7 @@
             text-align: center;
         }
 
-        h1 {
+        h1, h6 {
             font-family: 'Montserrat', sans-serif;
         }
 
@@ -36,6 +38,7 @@
             font-size: 16px;
             border-radius: 5px;
             border: 1px solid #ccc;
+            font-family: 'Montserrat', sans-serif;
         }
 
         .button-group {
@@ -52,6 +55,7 @@
             background-color: #4CAF50;
             color: white;
             cursor: pointer;
+            font-family: 'Montserrat', sans-serif;
         }
 
         button:hover {
@@ -62,6 +66,7 @@
             padding: 5px 10px;
             font-size: 12px;
             background-color: #f44336;
+            font-family: 'Montserrat', sans-serif;
         }
 
         #videoPage {
@@ -185,7 +190,7 @@
 
     function validateBirthdayPassword() {
         const birthdayPassword = document.getElementById('birthdayPasswordInput').value;
-        if (birthdayPassword === 'ulangtahun') {
+        if (birthdayPassword === '24128523') {
             alert('Selamat Ulang Tahun!');
             // Anda bisa menambahkan logika lain untuk setelah validasi berhasil
         } else {
