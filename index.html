@@ -88,18 +88,18 @@
 
 <!-- Halaman 1 -->
 <div id="page1" class="container">
-    <h1>Hi!</h1>
-    <h2>Sebelum lanjut, kita kenalan dulu
-    Nama guweh Erlangga, Klo lo?</h2>
+    <h4>Hi!</h4>
+    <h6>Sebelum lanjut, kita kenalan dulu,
+    Nama guweh Erlangga, Klo lo?</h6>
     <div class="input-field">
-        <input type="text" id="nameInput" placeholder="Typing disini">
+        <input type="text" id="nameInput" placeholder="Ketik disini">
     </div>
     <button onclick="goToPage2()">Lanjut</button>
 </div>
 
 <!-- Halaman 2 -->
 <div id="page2" class="container" style="display: none;">
-    <h1 id="userNameDisplay"></h1>
+    <h4 id="userNameDisplay"></h4>
     <div class="input-field">
         <input type="password" id="passwordInput" placeholder="Masukkan Password">
     </div>
@@ -109,8 +109,8 @@
 
 <!-- Halaman 3 -->
 <div id="page3" class="container" style="display: none;">
-    <h1>Yooo, Yang Mulia Permaisuri</h1>
-    <h2>Ada 2 tombol tuh dibawah, tinggal pilih aja</h2>
+    <h4>Yooo, Yang Mulia Permaisuri</h4>
+    <h6>Ada 2 tombol tuh dibawah, tinggal pilih aja</h6>
     <div class="button-group">
         <button onclick="goToBirthdayPage()">Birthday</button>
         <button onclick="goToPageSurprise()">Surprise</button>
@@ -127,17 +127,16 @@
 
 <!-- Halaman 5 (Lupa Password) -->
 <div id="forgotPasswordPage" class="container" style="display: none;">
-    <h1>Lu lupa? yang bener aja anj</h1>
-    <p>inget inget dah, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan mahluknya" dan "guweh tidak akan memberikan password yg tidak lo tau"</p>
+    <h4>Lo lupa? yang bener aja anj</h4>
+    <p>inget inget dah, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan umatnya" dan "guweh tidak akan memberikan password yg tidak lo tau"</p>
     <button onclick="backToPage2()">Kembali</button>
 </div>
 
 <!-- Halaman 6 (Ulang Tahun - Masukkan Kata Sandi) -->
 <div id="birthdayPage" class="container" style="display: none;">
-    <h1>Yang Mulia Permaisuri Ulang Tahun?</h1>
-    <h6>Note: Passwordnya kukasih pas kamu ultah, tpi klo kamu tau masukin aja dibawah:)</h6>
+    <h4>Yang Mulia Permaisuri Ulang Tahun?</h4>
     <div class="input-field">
-        <input type="password" id="birthdayPasswordInput" placeholder="Type disini">
+        <input type="password" id="birthdayPasswordInput" placeholder="Ketik disini">
     </div>
     <button onclick="validateBirthdayPassword()">Lanjut</button>
     <button onclick="backToPage3()">Kembali</button>
@@ -147,7 +146,7 @@
     function goToPage2() {
         const name = document.getElementById('nameInput').value;
         if (name) {
-            document.getElementById('userNameDisplay').innerText = "Halo, " + name + "!";
+            document.getElementById('userNameDisplay').innerText = "Salken, " + name + "!";
             document.getElementById('page1').style.display = 'none';
             document.getElementById('page2').style.display = 'block';
         } else {
