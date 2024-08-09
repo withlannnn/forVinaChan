@@ -123,7 +123,7 @@
 
 <!-- Halaman 4 (Surprise) -->
 <div id="videoPage" class="container" style="display: none;">
-    <video autoplay>
+    <video id="surpriseVideo" autoplay>
         <source src="assets/firework2.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
@@ -132,7 +132,7 @@
 <!-- Halaman 5 (Lupa Password) -->
 <div id="forgotPasswordPage" class="container" style="display: none;">
     <h1>Hah???? Lo lupa?</h1>
-    <h4>Inget inget coba, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan umatnya" dan "guweh tidak akan memberikan password yg tidak lo ketahui"</h4>
+    <h3>Inget inget coba, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan umatnya" dan "guweh tidak akan memberikan password yg tidak lo ketahui"</h3>
     <button onclick="backToPage2()">Kembali</button>
 </div>
 
@@ -171,6 +171,7 @@
     function goToPageSurprise() {
         document.getElementById('page3').style.display = 'none';
         document.getElementById('videoPage').style.display = 'block';
+        document.getElementById('surpriseVideo').play(); // Memulai pemutaran video
     }
 
     function goToForgotPassword() {
