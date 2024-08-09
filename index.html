@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Page</title>
+    <title>withLan</title>
     
-    <!-- Menambahkan Google Fonts Montserrat -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
 
     <style>
@@ -22,7 +21,6 @@
             text-align: center;
         }
 
-        /* Mengubah font "Selamat Datang!" menjadi Montserrat */
         h1 {
             font-family: 'Montserrat', sans-serif;
         }
@@ -60,14 +58,12 @@
             background-color: #45a049;
         }
 
-        /* Menyesuaikan ukuran tombol "Lupa Password" menjadi lebih kecil */
         .small-button {
             padding: 5px 10px;
             font-size: 12px;
-            background-color: #f44336; /* Warna tombol merah */
+            background-color: #f44336;
         }
 
-        /* Menyesuaikan video agar memenuhi seluruh layar tanpa kontrol */
         #videoPage {
             position: fixed;
             top: 0;
@@ -83,8 +79,8 @@
         #videoPage video {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Video akan memenuhi area tanpa memotong atau merubah aspek rasio */
-            pointer-events: none; /* Menonaktifkan interaksi dengan video */
+            object-fit: cover;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -92,9 +88,11 @@
 
 <!-- Halaman 1 -->
 <div id="page1" class="container">
-    <h1>Selamat Datang!</h1>
+    <h1>Hi!</h1>
+    <h2>Sebelum lanjut, kita kenalan dulu
+    Nama guweh Erlangga, Klo lo?</h2>
     <div class="input-field">
-        <input type="text" id="nameInput" placeholder="Masukkan Nama Anda">
+        <input type="text" id="nameInput" placeholder="Typing disini">
     </div>
     <button onclick="goToPage2()">Lanjut</button>
 </div>
@@ -106,14 +104,15 @@
         <input type="password" id="passwordInput" placeholder="Masukkan Password">
     </div>
     <button onclick="validatePassword()">Lanjut</button>
-    <button class="small-button" onclick="goToForgotPassword()">Lupa Password</button>
+    <button class="small-button" onclick="goToForgotPassword()">Lupa Password?</button>
 </div>
 
 <!-- Halaman 3 -->
 <div id="page3" class="container" style="display: none;">
-    <h1>Silahkan Pilih:</h1>
+    <h1>Yooo, Yang Mulia Permaisuri</h1>
+    <h2>Ada 2 tombol tuh dibawah, tinggal pilih aja</h2>
     <div class="button-group">
-        <button onclick="goToBirthdayPage()">Ulang Tahun</button>
+        <button onclick="goToBirthdayPage()">Birthday</button>
         <button onclick="goToPageSurprise()">Surprise</button>
     </div>
 </div>
@@ -128,16 +127,17 @@
 
 <!-- Halaman 5 (Lupa Password) -->
 <div id="forgotPasswordPage" class="container" style="display: none;">
-    <h1>Lupa Password?</h1>
-    <p>Silahkan ingat kembali password Anda.</p>
+    <h1>Lu lupa? yang bener aja anj</h1>
+    <p>inget inget dah, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan mahluknya" dan "guweh tidak akan memberikan password yg tidak lo tau"</p>
     <button onclick="backToPage2()">Kembali</button>
 </div>
 
 <!-- Halaman 6 (Ulang Tahun - Masukkan Kata Sandi) -->
 <div id="birthdayPage" class="container" style="display: none;">
-    <h1>Masukkan Kata Sandi Ulang Tahun</h1>
+    <h1>Yang Mulia Permaisuri Ulang Tahun?</h1>
+    <h6>Note: Passwordnya kukasih pas kamu ultah, tpi klo kamu tau masukin aja dibawah:)</h6>
     <div class="input-field">
-        <input type="password" id="birthdayPasswordInput" placeholder="Masukkan Kata Sandi">
+        <input type="password" id="birthdayPasswordInput" placeholder="Type disini">
     </div>
     <button onclick="validateBirthdayPassword()">Lanjut</button>
     <button onclick="backToPage3()">Kembali</button>
