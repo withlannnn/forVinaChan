@@ -88,9 +88,8 @@
 
 <!-- Halaman 1 -->
 <div id="page1" class="container">
-    <h4>Hi!</h4>
-    <h6>Sebelum lanjut, kita kenalan dulu,
-    Nama guweh Erlangga, Klo lo?</h6>
+    <h1>Hi!</h1>
+    <h6>Kenalan dulu kita, Nama guweh Erlangga, kalo loh?</h6>
     <div class="input-field">
         <input type="text" id="nameInput" placeholder="Ketik disini">
     </div>
@@ -99,7 +98,7 @@
 
 <!-- Halaman 2 -->
 <div id="page2" class="container" style="display: none;">
-    <h4 id="userNameDisplay"></h4>
+    <h1 id="userNameDisplay"></h1>
     <div class="input-field">
         <input type="password" id="passwordInput" placeholder="Masukkan Password">
     </div>
@@ -109,8 +108,8 @@
 
 <!-- Halaman 3 -->
 <div id="page3" class="container" style="display: none;">
-    <h4>Yooo, Yang Mulia Permaisuri</h4>
-    <h6>Ada 2 tombol tuh dibawah, tinggal pilih aja</h6>
+    <h1>Yooo, Yang Mulia Permaisuri</h1>
+    <h6>Ada 2 tombol, Yang Mulia Permaisuri tinggal pilih</h6>
     <div class="button-group">
         <button onclick="goToBirthdayPage()">Birthday</button>
         <button onclick="goToPageSurprise()">Surprise</button>
@@ -127,16 +126,16 @@
 
 <!-- Halaman 5 (Lupa Password) -->
 <div id="forgotPasswordPage" class="container" style="display: none;">
-    <h4>Lo lupa? yang bener aja anj</h4>
-    <p>inget inget dah, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan umatnya" dan "guweh tidak akan memberikan password yg tidak lo tau"</p>
+    <h1>Hah???? Lo lupa?</h1>
+    <h6>Inget inget coba, "Tuhan tidak akan memberikan cobaan yg melebihi kemampuan umatnya" dan "guweh tidak akan memberikan password yg tidak lo ketahui"</h6>
     <button onclick="backToPage2()">Kembali</button>
 </div>
 
 <!-- Halaman 6 (Ulang Tahun - Masukkan Kata Sandi) -->
 <div id="birthdayPage" class="container" style="display: none;">
-    <h4>Yang Mulia Permaisuri Ulang Tahun?</h4>
+    <h1>Yang Mulia Permaisuri Ulang Tahun?</h1>
     <div class="input-field">
-        <input type="password" id="birthdayPasswordInput" placeholder="Ketik disini">
+        <input type="password" id="birthdayPasswordInput" placeholder="Masukkan Password">
     </div>
     <button onclick="validateBirthdayPassword()">Lanjut</button>
     <button onclick="backToPage3()">Kembali</button>
